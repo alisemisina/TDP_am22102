@@ -1,0 +1,172 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C7DBE6;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body.dark-mode {
+  background-color:#282F3E;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 80px;
+  width: full-width;
+  background-color: #2596be;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0px;
+  position: relative;
+}
+
+body.dark-mode nav{
+  height: 80px;
+  width: full-width;
+  background-color: #181726;
+}
+
+.nav-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 32px; 
+}
+
+.nav-text a {
+  text-decoration: none;
+  color:#181726;
+  font-weight: 500;
+}
+
+body.dark-mode .nav-text a {
+  color: #D5E4EC;
+}
+
+.nav-text a.active {
+  background-color: #201424;  /* Dark background */
+  color: #D5E4EC;
+  padding: 6px 12px;
+  border-radius: 9px;
+}
+
+body.dark-mode .nav-text a.active {
+  background-color: #80AEC6;
+  color:#181726;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 24px;
+  right: 16px;
+  background-color: transparent;
+  border: solid 1px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.theme-toggle .icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.lang {
+  position: fixed;
+  top: 24px;
+  right: 50px;
+  background-color: transparent;
+  border: solid 1px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.lang .icon{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.virsraksts {
+  position: relative;
+  background-image: url('https://eztf.lu.lv/fileadmin/_processed_/7/7/csm_JB__0953_Visi.fotobrencis%40inbox.lv_ca306e1c32.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.virsraksts::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.virsraksts h1 {
+  color: white;
+  font-size:  96px;
+  line-height: 1.4;
+  position: relative;
+  z-index: 2; 
+  font-weight: 800;
+}
+
+.saturs {
+  margin: 20;
+  padding: 20;
+}
+
+
+.arrow-container {
+  position: relative;
+  width: 100%;
+}
+
+.side-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.side-arrow img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.side-arrow:hover img {
+  transform: scale(1.1);
+}
+
+.right-arrow {
+  right: 30px;
+}
+
+.left-arrow {
+  left: 30px;
+}
+
