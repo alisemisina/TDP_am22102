@@ -1,34 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="prefetch" href="index.html" />
-    <link rel="prefetch" href="programesana.html" />
-    <link rel="prefetch" href="os.html" />
-    <link rel="prefetch" href="tikli.html" />
-    <title>Administrēšana</title>
-  </head>
-  <body>
-    <nav>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="prefetch" href="index.html" />
+  <link rel="prefetch" href="programesana.html" />
+  <link rel="prefetch" href="os.html" />
+  <link rel="prefetch" href="tikli.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <script src="script.js" defer></script>
+  <title>Administrēšana</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-text">
       <a href="index.html">Sākums</a>
-      <a href="programesana.html">Programmēšanas vides</a>
+      <a href="programesana.html">Programmēšanas valodas</a>
       <a href="os.html">Operētājsistēmas</a>
-      <a href="tikls.html">Tīkla iekārtas</a>
-      <a href="admin.html">Administrēšana</a>
-    </nav>
-    <h1>Administrēšana</h1>
-
-<div class="saturs">
-        <h3><b>Python</b></h3>
-      <p>Lorem ipsum</p>
+      <a href="tikli.html">Tīkla iekārtas</a>
+      <a href="admin.html" class="active">Administrēšana</a>
     </div>
+    <div class="nav-button">
+      <button id="theme-toggle" class="theme-toggle">
+        <img id="theme-icon" src="https://img.icons8.com/ios-filled/50/moon-symbol.png" alt="Toggle Theme" class="icon" />
+      </button>
+      <button id="lang" class="lang">
+        <img id="lang-icon" src="https://cdn3.iconfinder.com/data/icons/world-flags-square-vol-3/48/United_Kingdom-512.png" alt="Toggle language" class="icon" />
+      </button>
+    </div>
+  </nav>
 
-  <a href="tikli.html" class="side-arrow left-arrow">
-    <img src="https://icons.veryicon.com/png/o/miscellaneous/rookie-30-official-icon-library/button-arrow-right-1.png" alt="Left arrow" class="flipped">
-  </a>
-</div>
+  <h1 class="nosaukums">Administrēšana</h1>
+  <div class="prieksvards">
+    <p>Sistēmu administrēšana ietver serveru, lietotāju, tīklu un drošības pārvaldību.</p>
+  </div>
 
-  </body>
+  <div class="section-block">
+    <div class="saturs">
+      <div class="row">
+        <div class="text">
+          <h2>Sistēmu Administrators</h2>
+          <p>Atbildīgs par IT infrastruktūras uzturēšanu, problēmu novēršanu un konfigurācijām.</p>
+        </div>
+        <div class="image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Sysadmin_workstation.png" alt="System Admin">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-container">
+    <a href="tikli.html" class="side-arrow left-arrow">
+      <img src="https://cdn-icons-png.flaticon.com/512/54/54623.png" alt="Left arrow" class="flipped">
+    </a>
+  </div>
+</body>
 </html>

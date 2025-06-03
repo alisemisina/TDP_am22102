@@ -1,39 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>"Tīkla iekārtas"</title>
-    <link rel="prefetch" href="index.html" />
-    <link rel="prefetch" href="programesana.html" />
-    <link rel="prefetch" href="os.html" />
-    <link rel="prefetch" href="admin.html" />
-  </head>
-  <body>
-    <nav>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="prefetch" href="index.html" />
+  <link rel="prefetch" href="programesana.html" />
+  <link rel="prefetch" href="os.html" />
+  <link rel="prefetch" href="admin.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <script src="script.js" defer></script>
+  <title>Tīkla iekārtas</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-text">
       <a href="index.html">Sākums</a>
-      <a href="programesana.html">Programmēšanas vides</a>
+      <a href="programesana.html">Programmēšanas valodas</a>
       <a href="os.html">Operētājsistēmas</a>
-      <a href="tikls.html">Tīkla iekārtas</a>
+      <a href="tikli.html" class="active">Tīkla iekārtas</a>
       <a href="admin.html">Administrēšana</a>
-    </nav>
-    <h1>Tīkla iekārtas</h1>
-
-<div class="saturs">
-        <h3><b>Python</b></h3>
-      <p>Lorem ipsum</p>
     </div>
-    
-    <div class="arrow-container">
-  <a href="admin.html" class="side-arrow right-arrow">
-    <img src="https://icons.veryicon.com/png/o/miscellaneous/rookie-30-official-icon-library/button-arrow-right-1.png" alt="Right arrow">
-  </a>
+    <div class="nav-button">
+      <button id="theme-toggle" class="theme-toggle">
+        <img id="theme-icon" src="https://img.icons8.com/ios-filled/50/moon-symbol.png" alt="Toggle Theme" class="icon" />
+      </button>
+      <button id="lang" class="lang">
+        <img id="lang-icon" src="https://cdn3.iconfinder.com/data/icons/world-flags-square-vol-3/48/United_Kingdom-512.png" alt="Toggle language" class="icon" />
+      </button>
+    </div>
+  </nav>
 
-  <a href="os.html" class="side-arrow left-arrow">
-    <img src="https://icons.veryicon.com/png/o/miscellaneous/rookie-30-official-icon-library/button-arrow-right-1.png" alt="Left arrow" class="flipped">
-  </a>
-</div>
+  <h1 class="nosaukums">Tīkla iekārtas</h1>
+  <div class="prieksvards">
+    <p>Tīkla iekārtas ir ierīces, kas nodrošina datu pārraidi starp dažādām ierīcēm un tīkliem.</p>
+  </div>
 
-  </body>
+  <div class="section-block">
+    <div class="saturs">
+      <div class="row">
+        <div class="text">
+          <h2>Maršrutētājs (Router)</h2>
+          <p>Nodrošina savienojumu starp dažādiem tīkliem un pārvalda datu pārsūtīšanu.</p>
+        </div>
+        <div class="image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Router_von_Linker-Seite.jpg" alt="Router">
+        </div>
+      </div>
+
+      <div class="wave-bottom">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+          <path class="wave-fill" d="M0,50 C150,150 350,-50 500,50 L500,150 L0,150 Z"></path>
+        </svg>
+      </div>
+
+      <div class="row reverse">
+        <div class="text">
+          <h2>Slēdzis (Switch)</h2>
+          <p>Pievieno vairākas ierīces vienā tīklā un nodrošina to savstarpējo saziņu.</p>
+        </div>
+        <div class="image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Network_switches.jpg" alt="Switch">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-container">
+    <a href="os.html" class="side-arrow left-arrow">
+      <img src="https://cdn-icons-png.flaticon.com/512/54/54623.png" alt="Left arrow" class="flipped">
+    </a>
+    <a href="admin.html" class="side-arrow right-arrow">
+      <img src="https://cdn-icons-png.flaticon.com/512/54/54240.png" alt="Right arrow">
+    </a>
+  </div>
+</body>
 </html>

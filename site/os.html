@@ -1,39 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="prefetch" href="index.html" />
-    <link rel="prefetch" href="programesana.html" />
-    <link rel="prefetch" href="tikli.html" />
-    <link rel="prefetch" href="admin.html" />
-    <title>Operētājsistēmas</title>
-  </head>
-  <body>
-    <nav>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="prefetch" href="index.html" />
+  <link rel="prefetch" href="programesana.html" />
+  <link rel="prefetch" href="tikli.html" />
+  <link rel="prefetch" href="admin.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <script src="script.js" defer></script>
+  <title>Operētājsistēmas</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-text">
       <a href="index.html">Sākums</a>
-      <a href="programesana.html">Programmēšanas vides</a>
-      <a href="os.html">Operētājsistēmas</a>
-      <a href="tikls.html">Tīkla iekārtas</a>
+      <a href="programesana.html">Programmēšanas valodas</a>
+      <a href="os.html" class="active">Operētājsistēmas</a>
+      <a href="tikli.html">Tīkla iekārtas</a>
       <a href="admin.html">Administrēšana</a>
-    </nav>
-    <h1>Operetājsistēmas</h1>
-
-<div class="saturs">
-        <h3><b>Python</b></h3>
-      <p>Lorem ipsum</p>
     </div>
-    
-    <div class="arrow-container">
-  <a href="tikli.html" class="side-arrow right-arrow">
-    <img src="https://icons.veryicon.com/png/o/miscellaneous/rookie-30-official-icon-library/button-arrow-right-1.png" alt="Right arrow">
-  </a>
+    <div class="nav-button">
+      <button id="theme-toggle" class="theme-toggle">
+        <img id="theme-icon" src="https://img.icons8.com/ios-filled/50/moon-symbol.png" alt="Toggle Theme" class="icon" />
+      </button>
+      <button id="lang" class="lang">
+        <img id="lang-icon" src="https://cdn3.iconfinder.com/data/icons/world-flags-square-vol-3/48/United_Kingdom-512.png" alt="Toggle language" class="icon" />
+      </button>
+    </div>
+  </nav>
 
-  <a href="programesana.html" class="side-arrow left-arrow">
-    <img src="https://icons.veryicon.com/png/o/miscellaneous/rookie-30-official-icon-library/button-arrow-right-1.png" alt="Left arrow" class="flipped">
-  </a>
-</div>
+  <h1 class="nosaukums">Operētājsistēmas</h1>
+  <div class="prieksvards">
+    <p>Operētājsistēmas ir pamata programmatūra, kas pārvalda datora resursus un atvieglo lietotāja mijiedarbību ar ierīci.</p>
+  </div>
 
-  </body>
+  <div class="section-block">
+    <div class="saturs">
+      <div class="row">
+        <div class="text">
+          <h2>Windows</h2>
+          <p>Populāra operētājsistēma, kas tiek izmantota gan personālajos datoros, gan uzņēmumos.</p>
+        </div>
+        <div class="image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2021.svg" alt="Windows">
+        </div>
+      </div>
+
+      <div class="wave-bottom">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+          <path class="wave-fill" d="M0,50 C150,150 350,-50 500,50 L500,150 L0,150 Z"></path>
+        </svg>
+      </div>
+
+      <div class="row reverse">
+        <div class="text">
+          <h2>Linux</h2>
+          <p>Atvērtā koda operētājsistēma, ko plaši izmanto serveros un izstrādes vidēs.</p>
+        </div>
+        <div class="image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux">
+        </div>
+      </div>
+
+      <div class="wave-top">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+          <path class="wave-fill" d="M0,50 C150,150 350,-50 500,50 L500,150 L0,150 Z"></path>
+        </svg>
+      </div>
+
+      <div class="row">
+        <div class="text">
+          <h2>macOS</h2>
+          <p>Apple izstrādāta operētājsistēma, kas tiek izmantota Mac datoros ar uzsvaru uz dizainu un stabilitāti.</p>
+        </div>
+        <div class="image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="macOS">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-container">
+    <a href="programesana.html" class="side-arrow left-arrow">
+      <img src="https://cdn-icons-png.flaticon.com/512/54/54623.png" alt="Left arrow" class="flipped">
+    </a>
+    <a href="tikli.html" class="side-arrow right-arrow">
+      <img src="https://cdn-icons-png.flaticon.com/512/54/54240.png" alt="Right arrow">
+    </a>
+  </div>
+</body>
 </html>
