@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,10 @@
   </head>
   <body>
     <div class="wrapper">
-        <nav >
+        <nav>
+          <div class="nav-logo">
+            <img src="logo.png" alt="Logo" class="logo" />
+          </div>
           <div class="nav-text">
             <a href="index.html" class="active">Sākums</a>
             <a href="programesana.html">Programmēšanas valodas</a>
@@ -27,23 +30,21 @@
               <img id="theme-icon" src="https://img.icons8.com/ios-filled/50/moon-symbol.png" alt="Toggle Theme" class="icon" />
             </button>
             <button id="lang" class="lang">
-              <img id="lang-icon" src="https://cdn3.iconfinder.com/data/icons/world-flags-square-vol-3/48/United_Kingdom-512.png" alt="Toggle language" class="icon" /> 
+              <img id="lang-icon" src="https://cdn3.iconfinder.com/data/icons/world-flags-square-vol-3/48/United_Kingdom-512.png" alt="Toggle language" class="icon" />
             </button>
           </div>
         </nav>
-
       <div class="virsraksts">
         <h1>
           <b>Mana izaugsme <br/>
           Latvijas Universitātē</b>
         </h1>
       </div>
-
       <main class="saturs fade-in">
         <h3><b>Par mani</b></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut nisi in libero luctus fermentum...</p>
+        <p>Mani sauc Alise Misiņa un es pašlaik studēju bakalaura programmā "Datorzinātnes" trešajā kursā. Esmu ieguvusi profesionālo izglītibu Datortīklu un datorsistēmu administrēšanā. Pašlaik arī bakalaura programmā studēju Informācijas tehnoloģiju novirzienā. <br><br> Esmu aktīva studentu pārstāvniecībā, patīk galda spēles un taisīt pasākumus. Esmu entuziastiska un gatava jaunām idejām un jauniem izaicinājumiem.</p>
       </main>
-      
+     
       <div class="arrow-container">
         <a href="programesana.html" class="side-arrow right-arrow">
           <img src="https://cdn-icons-png.flaticon.com/512/54/54240.png" alt="Right arrow">
@@ -52,9 +53,35 @@
     </div>
   </body>
   <footer>
-      <p>Sekojiet man:</p>
-      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="social-icon" />
-      </a>
-  </footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Logo" />
+        </div>
+        
+        <div class="footer-info">
+          <h4>Kontaktinformācija</h4>
+          <div class="contact-details">
+            <div class="contact-item">
+              <strong>Studenta ID:</strong>
+              <span>am22102</span>
+            </div>
+            <div class="contact-item">
+              <strong>E-pasts:</strong>
+              <span>alise.misina@datoriki.lv</span>
+            </div>
+            <div class="contact-item">
+              <strong>Tālr.:</strong>
+              <span>28659262</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-social">
+          <span class="social-text">Sekojiet man:</span>
+          <a href="https://www.instagram.com/alisemisina/" class="instagram-link" title="Instagram profils" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram" />
+          </a>
+        </div>
+
+      </div>
 </html>
