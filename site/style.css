@@ -170,6 +170,140 @@ body.dark-mode .nav-text a.active {
   display: flex;
   gap: 12px;
 }
+/* ABOUT ME IMAGE */
+ .profile-section {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 80px;
+   gap: 40px;
+   position: relative;
+   opacity: 0;
+   animation: slideInUp 0.8s ease-out forwards;
+ }
+
+ .profile-text {
+   flex: 1;
+   padding: 40px;
+   background: var(--glass-bg);
+   backdrop-filter: blur(15px);
+   border-radius: 24px;
+   border: 1px solid var(--glass-border);
+   box-shadow: var(--shadow-elevation);
+   position: relative;
+   overflow: hidden;
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.6, 1);
+ }
+
+ .profile-text:hover {
+   transform: translateY(-10px) scale(1.02);
+   box-shadow: 0 25px 50px rgba(0, 119, 182, 0.2);
+ }
+
+ .profile-text h3 {
+   font-size: clamp(1.5rem, 3vw, 2.5rem);
+   line-height: 1.3;
+   margin-bottom: 20px;
+   color: var(--text-dark);
+   font-weight: 700;
+   background: var(--gradient-primary);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   position: relative;
+ }
+
+ .profile-text p {
+   font-size: 1.1em;
+   line-height: 1.8;
+   color: var(--text-dark);
+   opacity: 0.9;
+ }
+
+ .profile-image {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   position: relative;
+ }
+
+ .profile-image img {
+   width: 100%;
+   max-width: 320px;
+   max-height: 320px;
+   border-radius: 24px;
+   box-shadow: var(--shadow-elevation);
+   transition: all 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+   position: relative;
+   z-index: 1;
+   object-fit: cover;
+ }
+
+ .profile-image:hover img {
+   transform: scale(1.05) rotate(2deg);
+   box-shadow: 0 30px 60px rgba(0, 119, 182, 0.3);
+ }
+
+ body.dark-mode .profile-text {
+   background: rgba(20, 33, 61, 0.3);
+ }
+
+ body.dark-mode .profile-text h3 {
+   background: var(--gradient-accent);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+ }
+
+ body.dark-mode .profile-text p {
+   color: var(--text-light);
+ }
+
+ @media (max-width: 900px) {
+   .profile-section {
+     flex-direction: column;
+     text-align: center;
+     gap: 30px;
+   }
+
+   .profile-image img {
+     max-width: 280px;
+   }
+ }
+
+ @media (max-width: 600px) {
+   .profile-text {
+     padding: 25px;
+   }
+
+   .profile-text h3 {
+     font-size: 1.8em;
+   }
+
+   .profile-text p {
+     font-size: 1em;
+     line-height: 1.6;
+   }
+ }
+
+ @media (max-width: 480px) {
+   .profile-text {
+     padding: 20px;
+   }
+   
+   .profile-text h3 {
+     font-size: 1.5em;
+     margin-bottom: 15px;
+   }
+   
+   .profile-text p {
+     font-size: 0.95em;
+   }
+   
+   .profile-image img {
+     max-width: 250px;
+   }
+ }
 
 /* TOGGLE BUTTONS */
 .theme-toggle,
@@ -583,7 +717,7 @@ footer {
 
 .footer-info {
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .footer-info h4 {
@@ -622,7 +756,7 @@ footer {
 }
 
 .social-text {
-  color: white;
+  color: black;
   font-size: 0.95rem;
   font-weight: 500;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);

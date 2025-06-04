@@ -34,7 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 network: "Tīkla iekārtas",
                 admin: "Administrēšana"
             },
-            footer: "Sekojiet man:",
+            footer: {
+                followMe: "Sekojiet man:",
+                contactInfo: "Kontaktinformācija",
+                studentId: "Studenta ID:",
+                email: "E-pasts:",
+                phone: "Tālr.:"
+            },
             
             // Home page
             home: {
@@ -142,7 +148,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 network: "Network Devices",
                 admin: "Administration"
             },
-            footer: "Follow me:",
+            footer: {
+                followMe: "Follow me:",
+                contactInfo: "Contact Information",
+                studentId: "Student ID:",
+                email: "Email:",
+                phone: "Phone:"
+            },
             
             // Home page
             home: {
@@ -297,9 +309,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         
         // Update footer (common to all pages)
-        const footerText = document.querySelector('footer p');
-        if (footerText) {
-            footerText.textContent = t.footer;
+        const footerFollowMe = document.querySelector('.social-text');
+        const footerContactTitle = document.querySelector('.footer-info h4');
+        const contactLabels = document.querySelectorAll('.contact-item strong');
+        
+        if (footerFollowMe) {
+            footerFollowMe.textContent = t.footer.followMe;
+        }
+        
+        if (footerContactTitle) {
+            footerContactTitle.textContent = t.footer.contactInfo;
+        }
+        
+        if (contactLabels.length >= 3) {
+            contactLabels[0].textContent = t.footer.studentId;
+            contactLabels[1].textContent = t.footer.email;
+            contactLabels[2].textContent = t.footer.phone;
         }
         
         // Page-specific translations
